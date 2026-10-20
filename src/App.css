@@ -388,7 +388,7 @@
         align-items: center;
         height: auto;
         padding: 15px 10px;
-        gap: 12px; /* नाम, सर्च बार ते बटणां दे बिचकार जगह */
+        gap: 12px;
     }
     .brand-name {
         text-align: center;
@@ -406,14 +406,9 @@
         width: 100%;
         justify-content: center;
     }
-   
-    
     .main-product-detail {
         flex-direction: column;
         padding: 10px;
-    }
-    .left-side, .right-side {
-        width: 100%;
     }
     .productdetail {
         margin: 20px 0;
@@ -426,24 +421,6 @@
         margin: 20px 0;
         gap: 15px;
     }
-    .cart-product-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .cart-product-detail {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-    .button-section {
-        margin-left: 0;
-        margin-top: 15px;
-    }
-    .cart-total-price {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    
     .cart-image-container, .main-img-container {
         height: auto;
         width: 100%;
@@ -455,25 +432,41 @@
         width: 100%;
         object-fit: contain; 
     }
-    
-
-    .buy-now, .proceed-to-buy, .add-to-cart-detail {
-        width: 100%;
-        font-size: 18px;
-        padding: 12px;
-        margin: 10px 0;
-        white-space: normal;
-        height: auto;
-    }
-    
-    
     .cart-total-price {
         width: 100%;
         margin: 20px 0;
         padding: 15px;
+        box-sizing: border-box;
     }
     .left-side, .right-side, .cart-product-detail {
-        width: 100%;
+        width: 100% !important;
+        height: auto !important;
+        margin-left: 0 !important;
         overflow: hidden;
+    }
+    .cart-product-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto !important;
+        padding: 15px;
+    }
+    .button-section {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .remove-from-cart, .buy-now, .proceed-to-buy, .add-to-cart-detail {
+        width: 100% !important;
+        display: block !important;
+        visibility: visible !important;
+        margin: 10px 0 !important;
+        font-size: 18px;
+        padding: 12px;
+        white-space: normal;
+        height: auto;
     }
 }

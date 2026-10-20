@@ -375,3 +375,52 @@
 .active{
     border: 1px solid black;
 }
+@media screen and (max-width: 768px) {
+    .nav-box {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    .search-bar {
+        width: 100%;
+    }
+    .search-bar:focus {
+        width: 100%;
+    }
+    .main-product-detail {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .left-side, .right-side {
+        width: 100%;
+    }
+    .productdetail {
+        margin: 20px 0;
+    }
+    .t-40 {
+        font-size: 28px;
+    }
+    .button-area {
+        flex-direction: column;
+        margin: 20px 0;
+        gap: 15px;
+    }
+    .cart-product-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .cart-product-detail {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .button-section {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .cart-total-price {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -443,5 +443,37 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+    
+    .cart-image-container, .main-img-container {
+        height: auto;
+        width: 100%;
+        min-height: 200px;
+        padding: 10px;
+    }
+    .cart-image-container img, .main-img-container img {
+        max-height: 200px;
+        width: 100%;
+        object-fit: contain; 
+    }
+    
+
+    .buy-now, .proceed-to-buy, .add-to-cart-detail {
+        width: 100%;
+        font-size: 18px;
+        padding: 12px;
+        margin: 10px 0;
+        white-space: normal;
+        height: auto;
+    }
+    
+    
+    .cart-total-price {
+        width: 100%;
+        margin: 20px 0;
+        padding: 15px;
+    }
+    .left-side, .right-side, .cart-product-detail {
+        width: 100%;
+        overflow: hidden;
     }
 }

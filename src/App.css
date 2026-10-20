@@ -384,15 +384,30 @@
 @media screen and (max-width: 768px) {
     .nav-box {
         flex-direction: column;
-        gap: 15px;
-        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 15px 10px;
+        gap: 12px; /* नाम, सर्च बार ते बटणां दे बिचकार जगह */
+    }
+    .brand-name {
+        text-align: center;
+        width: 100%;
     }
     .search-bar {
-        width: 100%;
+        width: 100%; 
+        max-width: 100%; 
     }
     .search-bar:focus {
-        width: 100%;
+        width: 100%; 
+        box-shadow: 0 4px 12px rgba(0,0,0,.2);
     }
+    .btn-section {
+        width: 100%;
+        justify-content: center;
+    }
+   
+    
     .main-product-detail {
         flex-direction: column;
         padding: 10px;
